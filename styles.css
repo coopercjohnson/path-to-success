@@ -269,25 +269,7 @@ header h1{
 }
 
 header p{
-    background-color: var(--purple);
-    padding: 20px;
-    font-weight: bold;
-    font-style: italic
-}
-
-header{
-    background-color: var(--purple);
-    text-align: center;
-    color: var(--white);
-}
-
-header h1{
-    padding-top: 20px;
-}
-
-header p{
-    background-color: var(--purple);
-    padding: 20px;
+    padding-bottom: 20px;
     font-weight: bold;
     font-style: italic
 }
@@ -302,10 +284,9 @@ nav a{
     border: var(--yellow) solid 5px;
 }
 
-nav h3{
+nav p{
     font-weight: bold;
     font-style: italic;
-    padding-bottom: 10px;
     color: var(--dark-gray);
 }
 
@@ -327,7 +308,9 @@ h2, h3, p{
     padding-top: 10px;
 }
 
-div{
+/* SERVICES */
+
+section > section{
     background-color: var(--white);
     border-radius: 30px;
     padding: 20px;
@@ -335,17 +318,18 @@ div{
     line-height: 1.5rem;
 }
 
+/* WHY */
 
-#why{
+main > section + section{
     background-color: var(--pink);
 }
 
-#why ul{
+ul{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-#why ul li{
+section ul li{
     padding: 30px;
     text-align: center;
     margin: 10px;
@@ -379,6 +363,11 @@ div{
 }
 
 /* TABLES */
+
+main > section + section + section{
+    background-color: var(--purple);
+}
+
 table{
     background-color: var(--yellow);
     margin: 0 auto;
@@ -395,7 +384,9 @@ td{
     border: var(--yellow) 2px solid;
 }
 
-#take{
+/* TAKE */
+
+main > section + section + section + section{
     background-color: var(--pink);
     color: var(--white);
     padding: 10px;
@@ -403,11 +394,7 @@ td{
     margin-top: 10px;
 }
 
-#take p{
-    padding: 10px;
-}
-
-#take a{
+section a{
     display: block;
     text-align: center;
     text-decoration: none;
@@ -418,6 +405,8 @@ td{
     padding: 20px;
     margin: 10px;
 }
+
+/* FOOTER */
 
 footer{
     background-color: var(--purple);
