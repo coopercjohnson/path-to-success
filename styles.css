@@ -324,7 +324,7 @@ main > section + section{
     background-color: var(--pink);
 }
 
-ul{
+#why ul{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
